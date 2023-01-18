@@ -16,7 +16,7 @@ To generate the dataset needed for the analysis and the ML model you first need 
 4 - Store data in a single parquet with `compact_all_data.py`
 
 
-You can also download directly the dataset from Kaggle, however this dataset is not updated. If you want to use an up to date dataset I recommend to run above scripts.
+You can also download directly the dataset from Kaggle ([link](https://www.kaggle.com/datasets/alexmolas/chess-960-lichess)), however this dataset is not updated. If you want to use an up to date dataset I recommend to run above scripts.
 
 ## Analysis
 
