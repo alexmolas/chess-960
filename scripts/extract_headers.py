@@ -9,6 +9,7 @@ from loggers import get_logger
 
 logger = get_logger(name=__name__)
 
+
 def read_headers(path: str) -> list[Headers]:
     # todo: remove hardcoded path
     pgn = open(path)
@@ -21,6 +22,7 @@ def read_headers(path: str) -> list[Headers]:
             break
     return headers
 
+
 def extract_headers(path: str):
 
     for _, _, files in os.walk(path):
@@ -31,7 +33,7 @@ def extract_headers(path: str):
                 df_headers = pd.DataFrame(headers)
                 filename = file.split(".")[0]
                 df_headers.to_parquet(f"data/headers/{filename}.parquet")
-        
-        
+
+
 if __name__ == "__main__":
     typer.run(extract_headers)
