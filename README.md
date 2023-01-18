@@ -1,5 +1,6 @@
 # Chess960 Analysis
----
+
+Source code I've used to produce [this analysis](https://www.amolas.dev/blog/chess-960-initial-position/).
 
 Before running any code I recommend you to start a new virtual environment and install all the packages in `requirements.txt`.
 
